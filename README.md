@@ -28,15 +28,33 @@ All the evaluated architectures are stored in file Resuls_MobileNet.json and Res
 ## Search Space
 
 
-The search space of Channel-Bench-Macro is conducted with 7 independent layers for MobileNet and ResNet, respectivel, the width of skip line is directly derived from the corresponding independent layer. Each layer in contains 4 candidate widths: [0.25, 0.5, 0.75, 1.0], which amounts to 4^7 networks for each search space (MobileNet and ResNet).
+The search space of Channel-Bench-Macro is conducted with 7 independent layers for MobileNet and ResNet, respectivel, the width of skip line is directly derived from the corresponding independent layer. Each layer in contains 4 candidate widths: [0.25, 0.5, 0.75, 1.0], which amounts to 4^7 = 16384 networks for each search space (MobileNet and ResNet).
 
 ## Network structure
 
+Search space of MobileNet for Channel-Bench-Macro. The ratio for each MobileNet block is set to 6 as default, which influences the maximum channel of the second conv in MB block.
+n | input | block | channel | stride
+------------ | ------------- | ------------- | ------------- | ------------- 
+1 | 32 X 32 X 3 | 3 X 3 conv  | 128 | 2
+2 | 16 X 16 X 128 | MB block  | 128 | 1
+1 | 16 X 16 X 128 | MB block  | 256 | 2
+1 | 16 X 16 X 256 | MB block  | 256 | 1
+1 | 16 X 16 X 256 | 1 X 1 conv  | 1024 | 1
+1 | 16 X 16 X 1024 | global avgpool  | - | -
+1 | 16 X 16 X 1024 | FC  | 10 | -
 
+For the ResNet search space, the ResNet block is introduced as RS block for abbreviate.
+n | input | block | channel | stride
+------------ | ------------- | ------------- | ------------- | ------------- 
+1 | 32 X 32 X 3 | 3 X 3 conv  | 256 | 2
+2 | 16 X 16 X 256 | RS block  | 256 | 1
+1 | 16 X 16 X 256 | RS block  | 512 | 2
+2 | 16 X 16 X 512 | RS block  | 512 | 1
+1 | 16 X 16 X 512 | global avgpool  | - | -
+1 | 16 X 16 X 512 | FC  | 10 | -
 
 ## Statistics of histograms of networks
 
-## Reproduce the Results
 
 ### Requirements
 
@@ -45,6 +63,7 @@ torch>=1.0.1
 torchvision
 ```
 
+## Reproduce the Results
 ### Training scripts
 cd train_folder
 
