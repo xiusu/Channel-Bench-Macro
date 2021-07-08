@@ -55,6 +55,11 @@ n | input | block | channel | stride
 
 ## Statistics of histograms of networks
 
+Accuracy, FLOPs, and Parameters of the proposed Channel-Bench-Macro w.r.t all architectures for ResNet and MobileNet search space.
+
+![ResNet](pics/ResNet.png)
+
+![MobileNet](pics/MobileNet.png)
 
 ## Requirements
 
