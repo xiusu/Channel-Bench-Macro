@@ -75,7 +75,7 @@ cd train_folder
 python train.py
 
 ### Training logs
-If you need training logs to help your research, i.e., you need the training accuracy or test accuracy of architectures from all training epochs. You can download the training logs of all architectures of MobileNet ([download here]()) and ResNet([download here]()) for a detailed analysis.
+If you need training logs to help your research, i.e., you need the training accuracy or test accuracy of architectures from all training epochs. You can download the training logs of all architectures of MobileNet ([Google Drive](https://drive.google.com/drive/folders/1-bNfZuU00ZavhH8_ojlPPtJHTpNuBu9G?usp=sharing)) and ResNet([Google Drive](https://drive.google.com/drive/folders/1-bNfZuU00ZavhH8_ojlPPtJHTpNuBu9G?usp=sharing)) for a detailed analysis.
 
 ## Citation
 
