@@ -56,7 +56,7 @@ n | input | block | channel | stride
 ## Statistics of histograms of networks
 
 
-### Requirements
+## Requirements
 
 ```
 torch>=1.0.1
