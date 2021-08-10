@@ -79,16 +79,15 @@ If you need training logs to help your research, i.e., you need the training acc
 
 ## Citation
 
-If you find that NAS-Bench-Macro helps your research, please consider citing it:
+If you find that Channel-Bench-Macro helps your research, please consider citing it:
 
 ```
-@misc{su2021bcnet,
-      title={BCNet: Searching for Network Width with Bilaterally Coupled Network}, 
-      author={Xiu Su and Shan You and Fei Wang and Chen Qian and Changshui Zhang and Chang Xu},
-      year={2021},
-      eprint={2105.10533},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{bcnet,
+  title={BCNet: Searching for Network Width with Bilaterally Coupled Network},
+  author={Su, Xiu and You, Shan and Wang, Fei and Qian, Chen and Zhang, Changshui and Xu, Chang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2175--2184},
+  year={2021}
 }
 
 @misc{su2021vision,
