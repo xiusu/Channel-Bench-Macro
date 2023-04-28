@@ -82,6 +82,17 @@ If you need training logs to help your research, i.e., you need the training acc
 If you find that Channel-Bench-Macro helps your research, please consider citing it:
 
 ```
+@ARTICLE{bcnetv2,
+  author={Su, Xiu and You, Shan and Xie, Jiyang and Wang, Fei and Qian, Chen and Zhang, Changshui and Xu, Chang},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Searching for Network Width With Bilaterally Coupled Network}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-17},
+  doi={10.1109/TPAMI.2022.3226777}}
+ 
+
 @inproceedings{bcnet,
   title={BCNet: Searching for Network Width with Bilaterally Coupled Network},
   author={Su, Xiu and You, Shan and Wang, Fei and Qian, Chen and Zhang, Changshui and Xu, Chang},
